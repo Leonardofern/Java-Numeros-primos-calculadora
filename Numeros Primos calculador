@@ -1,0 +1,18 @@
+function PrimeiroNumero(numero) {
+    for (var divisor = 2; divisor < numero; divisor++) 
+    if (numero % divisor == 0) 
+    return false;
+    return true;
+}
+
+var numerodetermidador = 50;
+var contador = 0;
+for (var i = numerodetermidador; i >= 2; i--) 
+
+if (PrimeiroNumero(i)) {
+  console.log(i);
+  contador++;
+if (contador === 10){
+    break;
+}
+}
